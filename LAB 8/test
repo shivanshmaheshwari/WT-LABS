@@ -1,0 +1,24 @@
+class ClassA {
+	public ClassA()
+	{
+	}
+
+	public void print()
+	{
+	}
+}
+
+public class ClassB extends ClassA {
+	public ClassA()
+	{
+	}
+	public void print()
+	{
+	}
+
+	public static void main(String[] args)
+	{
+		ClassB c1 = new ClassB(); // allowed
+		ClassB c2 = new ClassA(); // not allowed
+	}
+}
